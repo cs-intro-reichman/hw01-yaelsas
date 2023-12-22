@@ -5,5 +5,15 @@
  * Treats the three arguments as well as the computed value as double values
  */
 public class LinearEq {
-	// Put your code here
+	public static void main (String[] args) {
+		double a = Double.parseDouble(args[0]);
+		double b = Double.parseDouble(args[1]);
+		double c = Double.parseDouble(args[2]);
+		// computes the value of x
+		double x = (c - b)/a ; 
+		// prints the equation
+		System.out.println(a + " * x + " + b + " = " + c);
+		// prints the result
+		System.out.println("x = " + x);
+	}
 }
